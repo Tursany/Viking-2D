@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Playervariables : MonoBehaviour
+public class PlayerVariables : MonoBehaviour
 {
 
     public Transform startPosition;

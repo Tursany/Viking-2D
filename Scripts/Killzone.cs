@@ -8,7 +8,7 @@ public class Killzone : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<Playervariables>().Respawn();
+            other.gameObject.GetComponent<PlayerVariables>().Respawn();
         }
     }
 
