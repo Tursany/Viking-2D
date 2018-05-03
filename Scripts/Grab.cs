@@ -6,7 +6,7 @@ public class Grab : MonoBehaviour
 
     public bool grabbed;
     RaycastHit2D hit;
-    public float distance = 2f;
+    public float distance = 3f;
     public Transform holdpoint;
     public float throwforce;
     public LayerMask notgrabbed;
@@ -21,7 +21,7 @@ public class Grab : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.B))
+        if (Input.GetKeyDown(KeyCode.E))
         {
 
             if (!grabbed)
@@ -30,7 +30,7 @@ public class Grab : MonoBehaviour
 
                 hit = Physics2D.Raycast(transform.position, Vector2.right * transform.localScale.x, distance);
 
-                if (hit.collider != null && hit.collider.tag == "grabbable")
+                if (hit.collider != null && hit.collider.tag == "Grabbable")
                 {
                     grabbed = true;
 
